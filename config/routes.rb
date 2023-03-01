@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :notes
   resource :users, only: %i[create] # for signing up
   resources :sessions, only: %i[create destroy] # for logging in and out
 
